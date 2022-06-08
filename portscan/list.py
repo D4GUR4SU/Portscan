@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+RED   = "\033[1;31m"  
+CYAN  = "\033[1;36m"
+
 def getlist():
 
     top10 = [21, 22, 23, 25, 80, 110, 139, 443, 445, 3389]
@@ -10,17 +13,20 @@ def getlist():
     all = (top10+top20+top30)
     all_ports = range(1, 65535)
 
-    print("==========Options=========")
-    print("1 -> TOP 10")
-    print("2 -> TOP 20")
-    print("3 -> TOP 30")
-    print("4 -> ALL LISTS")
-    print("5 -> ALL PORTS (1-65535)")
-    print("==========================")
+    print(CYAN+"\n ┏━┓┏━┓╺┳╸╻┏━┓┏┓╻┏━┓")
+    print(CYAN+" ┃ ┃┣━┛ ┃ ┃┃ ┃┃┗┫┗━┓")
+    print(CYAN+" ┗━┛╹   ╹ ╹┗━┛╹ ╹┗━┛\n")
+
+    print(CYAN+" [1] - TOP 10")
+    print(CYAN+" [2] - TOP 20")
+    print(CYAN+" [3] - TOP 30")
+    print(CYAN+" [4] - ALL LISTS")
+    print(CYAN+" [5] - ALL PORTS (1-65535)")
+    print("\n")
 
 
     try:
-        resp = int(input("Choose your list: "))
+        resp = int(input(RED+"Choose your list: "))
         list = []
 
         if(resp == 1):
@@ -39,6 +45,6 @@ def getlist():
             list = all_ports
             return list
         else:
-            print("Pick a list - Ending portscan...")
+            print(RED+"Pick a list - Ending portscan...")
     except:
-        print("[-] ERROR: Value not supported")
+        print(RED+"[-] ERROR: Value not supported")
