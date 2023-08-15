@@ -22,7 +22,7 @@ if len(sys.argv) != 2:
     print(GREEN+"\t██║     ╚██████╔╝██║  ██║   ██║   ███████║╚██████╗██║  ██║██║ ╚████║ ")
     print(GREEN+"\t╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═══╝ ")
     print(GREEN+"\t                            v1.0.0                                   ")
-    print(GREEN+"\t                        by D.4.G.U.R.4.S.U                                ")
+    print(GREEN+"\t                        by D4GUR4SU                                ")
     print(GREEN+"\t          Example: portscan.py 192.168.0.1 or example.com            ")
     print("\n")
     
